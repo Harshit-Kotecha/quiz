@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz/answer_button.dart';
 import 'package:quiz/data/questions.dart';
 
 class QuestionsScreen extends StatefulWidget {
@@ -11,25 +12,40 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        padding: const EdgeInsets.all(8),
-        itemCount: questions.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Container(
-            // height: 50,
-            // color: Colors.amber,
-            child: Center(
-              child: Column(
-                children: [
-                  Text(
-                    questions[index].question,
-                  ),
-                  for (int i = 0; i < questions[index].answers.length; i++)
-                    Text(questions[index].answers[i]),
-                ],
-              ),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text(
+            'A question...',
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.white,
             ),
-          );
-        });
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          AnswerButton(
+            answerText: 'Answer 1',
+            onTap: () {},
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          AnswerButton(
+            answerText: 'Answer 2',
+            onTap: () {},
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          AnswerButton(
+            answerText: 'Answer 3',
+            onTap: () {},
+          ),
+        ],
+      ),
+    );
   }
 }
