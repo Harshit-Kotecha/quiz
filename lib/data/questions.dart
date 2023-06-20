@@ -17,7 +17,7 @@ const questions = [
     'By using XCode for iOS and Android Studio for Android',
   ]),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'What\'s the purpose of a Stateful Widget?',
     [
       'Update UI as data changes',
       'Update data as UI changes',
@@ -26,7 +26,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'Which widget should you try to use more often: Stateless Widget or Stateful Widget?',
     [
       'StatelessWidget',
       'StatefulWidget',
@@ -35,7 +35,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'What happens if you change data in a Stateless Widget?',
     [
       'The UI is not updated',
       'The UI is updated',
@@ -44,7 +44,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'How should you update data inside of Stateful Widgets?',
     [
       'By calling setState()',
       'By calling updateData()',
